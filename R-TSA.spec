@@ -11,8 +11,9 @@ URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
 BuildArch:        noarch
 Requires:         R-core
-Requires:         R-leaps R-locfit R-mgcv R-tseries 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-leaps R-locfit R-mgcv R-tseries
+Requires:         R-leaps R-locfit R-mgcv R-tseries
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-leaps R-locfit R-mgcv R-tseries
 
 %description
 Contains R functions and datasets detailed in the book "Time Series
