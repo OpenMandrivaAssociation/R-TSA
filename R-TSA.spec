@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          0.98
-Release:          1
+Release:          2
 Summary:          Time Series Analysis
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
