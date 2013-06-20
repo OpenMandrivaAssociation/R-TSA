@@ -2,8 +2,8 @@
 %global rlibdir  %{_datadir}/R/library
 
 Name:             R-%{packname}
-Version:          0.98
-Release:          2
+Version:          1.01
+Release:          1
 Summary:          Time Series Analysis
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
@@ -11,9 +11,8 @@ URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
 BuildArch:        noarch
 Requires:         R-core
-Requires:         R-leaps R-locfit R-mgcv R-tseries
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex
-BuildRequires:    R-leaps R-locfit R-mgcv R-tseries
+Requires:         R-leaps R-locfit R-mgcv R-tseries 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-leaps R-locfit R-mgcv R-tseries
 
 %description
 Contains R functions and datasets detailed in the book "Time Series
@@ -44,3 +43,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
+
+
+%changelog
+* Sun Feb 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.98-1
++ Revision: 777173
+- Import R-TSA
+- Import R-TSA
+
